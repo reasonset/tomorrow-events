@@ -1,0 +1,10 @@
+[Unit]
+Description=Notify tomorrow events
+
+[Service]
+Type=oneshot
+User=jrh
+Environment="HOME=/home/jrh"
+WorkingDirectory=/home/jrh/.local/opt/tomorrow-events
+ExecStart=/usr/bin/bundle exec ruby /home/jrh/.local/opt/tomorrow-events/mmbridge.rb /home/jrh/.local/opt/tomorrow-events/config.yaml
+Restart=no
