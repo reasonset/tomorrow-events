@@ -1,0 +1,12 @@
+---
+# CalDAV URL
+host: "https://example.com/"
+# CalDAV User name
+username: "jrh"
+# CalDAV Password
+password: "password12345"
+# URL of the calendar to exclude
+exclude: 
+  - https://example.com/jrh/xxxxxxxxxxxxx
+# Bridge webhook URL
+hook: "https://mattermost.example.com/hooks/xxxxxxxxxxxxx"
